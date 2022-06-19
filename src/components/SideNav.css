@@ -1,0 +1,63 @@
+
+/* Side Nav */
+.side__nav--icon {
+    display: none;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.side__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100%;
+    background: var(--white);
+    z-index: 1000;
+    padding: 5rem;
+    display: block;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .5s ease;
+}
+
+.side__nav .close__btn {
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.side__nav .close__btn button{
+    border: none;
+    background: var(--blue);
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+
+.side__nav button:active {
+    color: #fff;
+}
+
+.side__nav .signin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.side__nav__list {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.side__nav__list a {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.side__nav h5 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

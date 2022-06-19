@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="HypePower Social Marketing Company" />
+
+    <script
+      src="https://kit.fontawesome.com/48012dc06d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>HypePower</title>
+  </head>
+
+  <body>
+    <nav class="nav" id="nav"></nav>
+    <nav class="side__nav" id="side__nav"></nav>
+
+    <section id="root"></section>
+  </body>
+
+  <script>
+    window.onscroll = () => {
+      if (
+        window.scrollY >= 70 &&
+        !document.querySelector("nav").classList.contains("nav__scroll")
+      ) {
+        document.querySelector("nav").classList.add("nav__scroll");
+      } else if (window.scrollY < 35) {
+        document.querySelector("nav").classList.remove("nav__scroll");
+      }
+    };
+
+    // MOVE TO TOP BUTTON
+    window.onload = () => {
+      document.querySelector(".top").addEventListener("click", (e) => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 250) {
+          document.querySelector(".top").style.display = "inline-block";
+        } else {
+          document.querySelector(".top").style.display = "none";
+        }
+      });
+
+      // -------------------------------------
+      // Side Nav (Mobile Menu)
+      document
+        .querySelector(".side__nav--icon")
+        .addEventListener("click", (e) => {
+          let sideNav = document.querySelector(".side__nav");
+
+          sideNav.style.opacity = "1";
+          sideNav.style.visibility = "visible";
+          sideNav.style.right = "0";
+        });
+
+      document.querySelector(".close__btn").addEventListener("click", (e) => {
+        let sideNav = document.querySelector(".side__nav");
+
+        sideNav.style.opacity = "0";
+        sideNav.style.visibility = "hidden";
+        sideNav.style.right = "-100%";
+      });
+    };
+  </script>
+</html>

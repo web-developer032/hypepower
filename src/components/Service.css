@@ -1,0 +1,163 @@
+.service {
+    padding: 4rem 0;
+    background-color: rgb(243, 243, 243);
+    background-image: url(../assets/images/services-background30f4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.service__para {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--gray);
+    margin-bottom: 4rem;
+}
+
+/* ---------------------- */
+/* parent */
+.service__socialMedia {
+    padding: 1rem 6rem;
+
+    display: flex;
+    /* align-items: center; */
+}
+
+/* 1st child */
+.socialMedia__list--box {
+}
+
+.socialMedia__list--box h4 {
+    background: var(--blue);
+    color: var(--white);
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.socialMedia__list {
+    list-style: none;
+    background: var(--white);
+    padding: 1rem 0;
+}
+
+li.socialMedia__list--active a {
+    color: var(--blue) !important;
+    border-left: 3px solid var(--blue) !important;
+}
+
+.socialMedia__list li a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--gray);
+
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    transition: 0.5s;
+    border-left: 3px solid var(--white);
+}
+
+.socialMedia__list li:hover a {
+    color: var(--blue);
+    border-left: 3px solid var(--blue);
+}
+
+.socialMedia__list li a i {
+    margin-right: 1rem;
+}
+
+/* 2nd child */
+.socialMedia__detail--container {
+    flex: 1;
+    padding: 1rem 5rem !important;
+}
+
+.socialMedia__detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.socialMedia__detail--box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialMedia__detail--box .box {
+    background: var(--white);
+    text-decoration: none;
+    color: var(--gray);
+    padding-bottom: 2rem;
+}
+.socialMedia__detail--box .box:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.socialMedia__detail--box .box .box__img {
+    max-width: 22rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.socialMedia__detail--box .box .box__img img {
+    width: 70%;
+}
+
+.socialMedia__detail--box .box .box__img span {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: 0%;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+.socialMedia__detail--box .box .box__img i {
+    height: 4rem;
+    width: 6rem;
+    background: #f6716f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedia__detail--box .box:hover .box__img span {
+    height: 100%;
+    opacity: 1;
+}
+
+.socialMedia__detail--box .box:hover h5 {
+    color: var(--blue);
+}
+
+.socialMedia__detail--box .box .box__detail {
+    text-align: center;
+}
+.socialMedia__detail--box .box .box__detail h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.socialMedia__detail--box .box .box__detail p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}

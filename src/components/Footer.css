@@ -1,0 +1,136 @@
+.footer {
+  background: #eee;
+  padding: 5rem 8rem;
+}
+
+/* -------------- */
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(192, 191, 191);
+  padding-bottom: 3rem;
+}
+
+.footer__social {
+  width: 40%;
+}
+.social__logo {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 4rem;
+  font-weight: bolder;
+  /* height: 8rem;
+    width: 28rem; */
+  margin-bottom: 2rem;
+}
+/* .social__logo img {
+  height: 100%;
+  width: 100%;
+} */
+.social__para {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav.social__list a {
+  height: 5rem;
+  width: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  border-radius: 50%;
+  color: #555;
+  font-size: 2rem;
+  background: rgb(204, 204, 204);
+  transition: 1s;
+}
+
+nav.social__list a:hover {
+  background: var(--blue);
+}
+nav.social__list a:hover i {
+  color: #fff;
+}
+
+.footer__top h2 {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+}
+.footer__top ul {
+  list-style: none;
+}
+.footer__top ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer__top ul a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.footer__top ul a:hover {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.footer__contacts {
+  width: 20%;
+}
+
+.footer__contacts ul li a {
+  display: flex;
+}
+
+.footer__contacts i {
+  color: var(--blue);
+  margin-right: 1.5rem;
+}
+
+/* ------------ */
+.footer__bot {
+  padding: 3rem 0;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.footer__copyright a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.footer__copyright a:hover {
+  color: var(--blue);
+}
+
+/* ------------------------------ */
+/* Go to Top */
+.top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  background: var(--blue);
+  color: var(--white);
+  display: none;
+}

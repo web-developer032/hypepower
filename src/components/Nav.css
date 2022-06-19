@@ -1,0 +1,80 @@
+.nav {
+  position: fixed;
+  background: linear-gradient(to right, var(--gradBlue), var(--gradGreen));
+  z-index: 99;
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.4s;
+}
+
+/* ----------------- */
+.nav__logo {
+  color: #fff;
+  font-size: 3.3rem;
+  user-select: none;
+  cursor: none;
+}
+/* .nav__logo {
+    height: 6rem;
+    width: 20rem;
+}
+
+.logo__img {
+    height: 100%;
+    width: 100%;
+} */
+
+/* ------------------ */
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav__list--item {
+  margin-right: 1rem;
+}
+
+.nav__list--link {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.nav__list--link:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------ */
+.nav__signin {
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.1rem;
+}
+.nav__signin:hover {
+  box-shadow: 2px 2px 5px 1px var(--blue), -2px -2px 5px -1px var(--blue);
+}
+.nav__signin img {
+  height: 100%;
+}
+.nav__signin span {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+/* ------------------- */
+.nav__scroll {
+  box-shadow: 0px 0.1px 5px rgba(0, 0, 0, 0.25);
+  padding: 3rem 0;
+}
+
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */

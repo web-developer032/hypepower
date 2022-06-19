@@ -1,0 +1,35 @@
+.counter {
+    padding: 8rem;
+
+    background-image: url(../assets/images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+    background-color: rgb(245, 245, 245);
+}
+
+.counter__para {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+    color: #555;
+}
+
+.counter__items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter__item h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #555;
+}
+
+.counter__item p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
